@@ -1,0 +1,13 @@
+---
+- name: add key
+  apt_key:
+    url: https://openresty.org/package/pubkey.gpg
+
+- name: add repository
+  apt_repository:
+    repo: "deb http://openresty.org/package/ubuntu {{ ansible_distribution_release }} main"
+
+- name: install
+  apt:
+    name: openresty
+    state: present

@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Filip Tepper
+  description: Install OpenResty from official packages
+  license: MIT
+  min_ansible_version: 2.0
+  version: 1.0
+  platforms:
+    - name: Ubuntu
+      versions:
+      - xenial
+  galaxy_tags:
+    - system
+    - nginx
+    - openresty
